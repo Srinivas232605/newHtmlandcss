@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1px">
+      <tr>
+      <td>Salary</td>
+      <td>Tax Amount</td>
+      <td>Take Home Salary</td>
+      </tr>
+      <tr>
+        <td id="one"></td>
+        <td id="two"></td>
+        <td id="three"></td>
+      </tr>
+
+
+
+    </table>
+
+    <Script>
+      let Salary = prompt("Enter the salary")
+      
+      if(Salary <= 30000){
+        document.getElementById("one").innerHTML=Salary
+        let tax_amount = "no tax"
+        document.getElementById("two").innerHTML=tax_amount
+        let home_salary = Salary 
+        document.getElementById("three").innerHTML=home_salary
+
+      }
+
+      if((Salary  > 30000) &&  (Salary <= 40000)){
+        document.getElementById("one").innerHTML=Salary
+        let tax_amount = (Salary/100)*5
+        document.getElementById("two").innerHTML=tax_amount
+        let home_salary = Salary - tax_amount
+        document.getElementById("three").innerHTML=home_salary
+
+      }
+
+      if((Salary  > 40000) &&  (Salary <= 50000)){
+        document.getElementById("one").innerHTML=Salary
+        let tax_amount = (Salary/100)*10
+        document.getElementById("two").innerHTML=tax_amount
+        let home_salary = Salary - tax_amount
+        document.getElementById("three").innerHTML=home_salary
+
+      }
+      if((Salary  > 50000) &&  (Salary <= 60000)){
+        document.getElementById("one").innerHTML=Salary
+        let tax_amount = (Salary/100)*12
+        document.getElementById("two").innerHTML=tax_amount
+        let home_salary = Salary - tax_amount
+        document.getElementById("three").innerHTML=home_salary
+
+      }
+      
+    </Script>
+</body>
+</html>

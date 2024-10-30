@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            background-color: aqua;
+            width: 1000px;
+            height: 200px;
+        }
+        .two{
+           width: 1000px;
+           height: 500px;
+           background-color: gray; 
+           /* position: absolute;
+           position: relative;
+           top: 100px;
+           left: 100px;
+           right: 100px; */
+
+
+        }
+        .three{
+            width: 1000px;
+            height: 500px;
+            background-color: blueviolet;
+
+        }
+        #container{
+            width:1000px;
+            margin: auto;
+        }
+
+        .pics{
+            width: 300px;
+            height: 200px;
+            /* position: fixed;
+            bottom: 50px;
+            right: 30px; */
+            position: sticky;
+            top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- <div class="pics"><img src="https://picsum.photos/200/300" alt=""></div> -->
+    <div class="one">first division</div>
+    <div class="pics"><img src="https://picsum.photos/200/300" alt=""></div>
+    <div class="two">second division</div>
+    <div class="three">third division</div>
+    </div>
+    
+</body>
+</html>

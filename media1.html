@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width:1000px;
+            height: 350px;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        @media screen and (max-width:999px){
+            .box{
+                width: 100%;
+                background-color: bisque;
+            }
+
+        @media screen and (max-width:600px) {
+            .box{
+                background-color: rgb(96, 57, 0);
+            }
+
+            img{
+                width: 100%;
+            }
+            
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/200/300"/>
+    </div>
+</body>
+</html>

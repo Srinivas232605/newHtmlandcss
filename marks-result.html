@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       #one two{
+        color: rebeccapurple;
+       }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+        <td>Marks</td>
+        <td>Result</td>
+        </tr>
+        <tr>
+            <td id="one"></td>
+            <td id="two"></td>
+        </tr>
+
+    </table> 
+    <script>
+       let marks = prompt("Enter the marks")
+      if(marks < 35){
+        document.getElementById('one').innerHTML=marks
+        document.getElementById('two').innerHTML="Falied"
+
+      }else if(marks >= 35 && marks <= 50){
+         document.getElementById('one').innerHTML=marks
+        document.getElementById('two').innerHTML="Passed"
+      }else if(marks > 50 && marks <= 60){
+        document.getElementById('one').innerHTML=marks
+        document.getElementById('two').innerHTML="Second class"
+      }else if(marks > 60 && marks <= 70){
+        document.getElementById('one').innerHTML=marks
+        document.getElementById('two').innerHTML="First class"
+      }else if(marks >70 && marks <= 100){
+        document.getElementById('one').innerHTML=marks
+        document.getElementById('two').innerHTML="Distinction"
+      }else{
+        alert("Invalid entry")
+      }
+
+    </script>
+    
+</body>
+</html>

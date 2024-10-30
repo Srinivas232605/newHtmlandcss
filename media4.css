@@ -1,0 +1,56 @@
+#container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+.banner{
+    width: 1000px;
+    height: 200px;
+}
+.left{
+    width: 500px;
+    height: 400px;
+    background-color: yellow;
+    float: left;
+}
+
+.right{
+    width: 500px;
+    height: 400px;
+    background-color: orange;
+    float: left;
+}
+
+@media screen and (max-width: 999px) {
+    #container{
+        width: 100%;
+
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .left{
+        width: 30%;
+        
+    }
+    .right{
+        width: 70%;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:600px){
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+
+}

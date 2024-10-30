@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+        <td>Key</td>
+        <td>Value</td>
+        </tr>
+    </table>
+    <script>
+
+        var days = ['monday','tuesday','wednesday','thursday','friday'];
+
+        for(let day in days){
+            document.write("<tr><td>"+day+"</td><td>"+days[day]+"</td></tr>")
+        }
+    </script>
+</body>
+</html>
