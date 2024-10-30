@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2 id="txt">Hello JavaScript</h2>
+   <br>
+   <button onclick="demo()">Red</button> 
+   <button onclick="demo1()">Pink</button> 
+   <button onclick="demo2()">blue</button>
+   
+   <script>
+
+    function demo(){
+        document.getElementById('txt').style.color="red"
+    }
+    function demo1(){
+        document.getElementById('txt').style.color="pink"
+    }
+    function demo2(){
+        document.getElementById('txt').style.color="blue"
+    }
+   </script>
+
+</body>
+</html>
