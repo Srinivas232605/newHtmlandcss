@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const promise = new Promise(function(reslove, reject){
+            var x ='javascript'
+            var y = 'javascript123'
+
+            if(x==y){
+                return reslove()
+            }else{
+                return reject()
+            }
+        })
+
+        promise.then((x)=> console.log('Success'))
+        .catch((err)=>console.log('error'))
+    </script>
+</body>
+</html>
